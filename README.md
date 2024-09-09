@@ -69,4 +69,10 @@ De esta manera, el usuario podrá iniciar sesión usando la contraseña cifrada,
 
 ## Licencia
 
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+Este proyecto está licenciado bajo la [Licencia MIT](LICENSE). 
+
+El archivo de licencia del repositorio original se encuentra en [este enlace](https://github.com/vrd83/terraform-ubuntu-cloudimage-vsphere-deploy/blob/main/LICENSE). Asegúrate de consultar el archivo de licencia original para obtener más detalles sobre los términos aplicables al código original.
+
+### Nota
+
+Las nuevas mejoras y modificaciones realizadas en este repositorio están sujetas a la Licencia MIT, mientras que el código original sigue bajo la licencia especificada en el repositorio original.
