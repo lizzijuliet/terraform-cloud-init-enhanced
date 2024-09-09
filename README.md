@@ -7,7 +7,7 @@ Este repositorio se basa en [terraform-ubuntu-cloudimage-vsphere-deploy](https:/
 
 ## Cambios realizados:
 - Puedes ingresar el nombre del usuario directamente o usar una variable para definirlo de forma dinámica en distintos entornos.
-- - **Se añadió una contraseña cifrada utilizando el método SHA-512**, en conjunto con `lock_passwd: false`, lo cual es **obligatorio** para que la configuración funcione correctamente. Si la contraseña no está cifrada, el proceso fallará.
+- **Se añadió una contraseña cifrada utilizando el método SHA-512**, en conjunto con `lock_passwd: false`, lo cual es **obligatorio** para que la configuración funcione correctamente. Si la contraseña no está cifrada, el proceso fallará.
 - Se mantuvo la configuración original de la red y la desactivación de IPv6.
 
 ## Compatibilidad con versiones de Terraform vsphere provider
