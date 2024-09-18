@@ -9,6 +9,17 @@ Este repositorio se basa en [terraform-ubuntu-cloudimage-vsphere-deploy](https:/
 - Puedes ingresar el nombre del usuario directamente o usar una variable para definirlo de forma dinámica en distintos entornos.
 - **Se añadió una contraseña cifrada utilizando el método SHA-512**, en conjunto con `lock_passwd: false`, lo cual es **obligatorio** para que la configuración funcione correctamente. Si la contraseña no está cifrada, el proceso fallará.
 - Se mantuvo la configuración original de la red y la desactivación de IPv6.
+- Si se utiliza el archivo tal como está, es probable que las personas que intenten conectarse por SSH se encuentren con un error similar a este:
+
+```bash
+Permission denied (publickey).
+```
+Este error ocurre porque:
+
+No se ha configurado el archivo sshd_config correctamente: No se asegura que la autenticación por clave pública esté habilitada.
+Permisos incorrectos en el directorio .ssh o el archivo authorized_keys: Si los permisos del directorio .ssh o del archivo authorized_keys no son los correctos, SSH rechazará la clave.
+
+- Se agrega un nuevo archivo *cloud-config_new*** donde se solucina el problema del acceso por ssh
 
 ## Compatibilidad con versiones de Terraform vsphere provider
 
