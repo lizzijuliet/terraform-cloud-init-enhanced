@@ -19,7 +19,7 @@ Este error ocurre porque:
 No se ha configurado el archivo sshd_config correctamente: No se asegura que la autenticación por clave pública esté habilitada.
 Permisos incorrectos en el directorio .ssh o el archivo authorized_keys: Si los permisos del directorio .ssh o del archivo authorized_keys no son los correctos, SSH rechazará la clave.
 
-- Se agrega un nuevo archivo *cloud-config_new*** donde se solucina el problema del acceso por ssh
+- Se agrega un nuevo archivo **cloud-config_new** donde se solucina el problema del acceso por ssh
 
 ## Compatibilidad con versiones de Terraform vsphere provider
 
